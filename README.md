@@ -1,16 +1,16 @@
-# Altovita
+# Single webpage
 
 ### Please note ###
 
-* As dicussed with Vivi, the test is not complete but here is the codebase so far for you to review at your earliest convenience
+* This webpage was made up using HTML5 markup and the Bootstrap 4 components library
 
 * Tech stack:
-    * `Bootstrap 4` as the CSS framework
-    * `Gulp` as the task runner
-    * `HTML5` as the markup for this application
+    * `Bootstrap 4`(using the SCSS version)
+    * `SCSS` syntax to add customisations where necessary (that compiled into CSS)
+    * `Gulp` as the task runner (e.g JS and SCSS compiling)
+    * `HTML5` as the markup
     
 ### LIVE URL ###
 
-* Please use http://www.pierrick-senelaer.com/dev/altovita/
-* Only tested in Chrome and Firefox & Safari so far
+* Please use http://www.pierrick-senelaer.com/dev/single-page/
 * Fully responsive - tested only for the browsers above

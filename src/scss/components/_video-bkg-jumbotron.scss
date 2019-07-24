@@ -1,0 +1,55 @@
+section.video-bkg,
+section.hero-bkg {
+  
+  .jumbotron {
+  	display: flex;
+  	
+  	height: 100vh;
+
+  	background-position: 50%;
+  	background-size: cover;
+  }
+
+  .card-title {
+  	@include media-breakpoint-down(sm) {
+      font-size: $h1-font-size*.7;
+    }
+    @include media-breakpoint-up(xxl) {
+      max-width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+  .main-subhead {
+    @include media-breakpoint-down(sm) {
+      font-size: $font-size-base;
+    }  	
+  }
+
+  .card-title,
+  .main-subhead {
+  	@include media-breakpoint-down(sm) {
+      padding: 0 40px;
+    }
+  }
+
+  .search {
+  	@include media-breakpoint-up(md) {
+      width: 88%;
+      max-width: 88%;
+      margin: 0 auto;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 62%;
+      max-width: 62%;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 43%;
+      max-width: 43%;
+    }  	
+
+  }
+
+}

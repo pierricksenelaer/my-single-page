@@ -1,5 +1,5 @@
 {
-    "name": "Altovita-tech-test-Pierrick",
+    "name": "B4SinglePage",
     "version": "1.0.0",
     "description": "",
     "main": "gulpfile.js",
@@ -28,6 +28,7 @@
         "gulp-sass": "^4.0.2",
         "gulp-sequence": "^0.4.6",
         "gulp-sourcemaps": "^2.6.1",
+        "gulp-terser": "^1.2.0",
         "gulp-uglify": "^3.0.0",
         "gulp-util": "^3.0.8",
         "gulp-wait": "^0.0.2",
@@ -36,8 +37,9 @@
         "wiredep": "^4.0.0"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "start": "gulp",
+        "watch": "gulp watch"
     },
-    "author": "",
+    "author": "Pierrick Senelaer",
     "license": "ISC"
 }

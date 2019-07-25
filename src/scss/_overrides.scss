@@ -8,3 +8,12 @@ section.video-bkg {
     margin: 0;
   }
 }
+
+// Introduction
+section.card-introduction {
+  .jumbotron {
+    @include media-breakpoint-up(sm) {
+      padding: 4rem; 
+    }
+  }
+}

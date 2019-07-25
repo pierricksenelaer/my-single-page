@@ -8,7 +8,7 @@
   }
 
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: 10px;
   z-index: 2;
   
@@ -41,7 +41,7 @@
   }
 
   .github {
-
+    padding-bottom: 30px;
     &:after {
       
       @include media-breakpoint-down(sm) {
@@ -55,7 +55,7 @@
       width: 100%;
       position: absolute;
       left: 5%;
-      bottom: 13px;
+      bottom: 18px;
       max-width: 90%;
       margin: 0 auto;
     }

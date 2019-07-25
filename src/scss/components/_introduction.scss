@@ -1,0 +1,58 @@
+section.card-introduction {
+  
+  .jumbotron > * {
+  	padding: 100px 0;
+    position: relative;
+    
+  }
+
+  .bkg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+    overflow: hidden;
+  }
+
+  .jumbotron {
+
+    @include media-breakpoint-down(md) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+  	.inner {
+      
+      @extend %box-shadow-panel;
+
+  	  @include media-breakpoint-up(sm) {
+        padding: 40px 100px;
+  	  }
+
+      @include media-breakpoint-up(lg) {
+        max-width: 60%;
+      }
+
+      @include media-breakpoint-up(xl) {
+        max-width: 40%;
+      }
+
+      background-color: $white;
+      margin: 0 auto;
+      padding: 20px 50px;
+      position: relative;
+      z-index: 2;
+
+      h2 {
+        font-size: $h1-font-size-small;
+      }
+
+      .summary {
+        font-size: $font-size-mx;      
+      }
+  	}
+  }
+
+}

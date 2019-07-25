@@ -1,0 +1,71 @@
+// Buttons
+.btn {
+  border-radius: 0;
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-mx
+}
+.btn-primary {
+  color: $lightAqua;
+  background-color: $darkSlateBlue;
+  border-color: $darkSlateBlue;
+  
+  &:hover {
+  	background-color: $darkSlateBlue;
+  	color: $beige;
+  }
+
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border-color: $white;
+  
+  &:hover {
+  	background-color: transparent;
+  	border-color: $beige;
+  	color: $beige;
+  }
+
+  &.btn-dark {
+    border-color: $darkSlateBlue;
+    color: $darkSlateBlue;
+    
+    &:hover {
+  	  border-color: $beige;
+  	  color: $beige;
+    }
+
+  }
+
+}
+
+.btn-link {
+  color: $white;
+
+  &:hover {
+    color: $beige;
+    text-decoration: none;	
+  }
+
+  &.btn-dark {
+  	color: $darkSlateBlue;
+  	border: 0;
+
+  	&:hover {
+      color: $beige;
+  	}
+  }
+}
+
+// using the .btn-info for the action variation
+.btn-info {
+  color: $darkSlateBlue;
+  background-color: $lightAqua;
+  border-color: $lightAqua;
+
+  &:hover {
+    color: $lightAqua;
+    background-color: $darkSlateBlue;
+    border-color: $darkSlateBlue;  	
+  }
+}

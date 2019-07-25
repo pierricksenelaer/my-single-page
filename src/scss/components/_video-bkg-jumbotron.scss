@@ -14,7 +14,7 @@ section.hero-bkg {
   	@include media-breakpoint-down(sm) {
       font-size: $h1-font-size*.7;
     }
-    @include media-breakpoint-up(xxl) {
+    @include media-breakpoint-up(xl) {
       max-width: 70%;
       margin: 0 auto;
     }

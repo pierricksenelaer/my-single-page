@@ -28,5 +28,10 @@ $container-max-widths: (
 
 // Base
 @import "base/typography";
+
 // Components
-@import "components/video-bkg-jumbotron"
+@import "components/video-bkg-jumbotron";
+
+
+// Misc
+@import "misc/social-media-hero"

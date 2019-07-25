@@ -1,0 +1,20 @@
+body {
+  background-color: map-get($grays, "200");
+}
+
+.box-shadow-panel,
+%box-shadow-panel {
+  box-shadow: -6px 8px 23px 2px rgba(26, 49, 101, 0.25);
+}
+
+.block-linking,
+%block-linking {
+  position: absolute !important;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  text-indent: -9999px;
+  z-index: 2;
+}

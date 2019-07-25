@@ -33,23 +33,4 @@ section.hero-bkg {
     }
   }
 
-  .search {
-  	@include media-breakpoint-up(md) {
-      width: 88%;
-      max-width: 88%;
-      margin: 0 auto;
-    }
-
-    @include media-breakpoint-up(lg) {
-      width: 62%;
-      max-width: 62%;
-    }
-
-    @include media-breakpoint-up(xl) {
-      width: 43%;
-      max-width: 43%;
-    }  	
-
-  }
-
 }

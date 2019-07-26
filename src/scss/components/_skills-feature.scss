@@ -1,0 +1,137 @@
+section.skills-feature {
+  @include media-breakpoint-up(md) {
+    padding-bottom: 100px;
+  }
+ 
+  padding-bottom: 75px;
+
+  .carousel {
+  	background: transparent;
+  	.carousel-inner {
+      
+      @include media-breakpoint-down(md) {
+      	overflow: visible;
+      }
+
+      > * .inner {
+      	
+      	@include media-breakpoint-up(md) {
+          display: flex;
+          flex-wrap: wrap;
+      	}
+
+      	@include media-breakpoint-up(lg) {
+          padding: 0 10% 0 7.5%;
+      	}
+
+      	@include media-breakpoint-up(xl) {
+          padding: 0 20% 0 15%;
+      	}
+      	
+      }
+
+      .thumb {
+        
+        @include media-breakpoint-down(sm) {
+          z-index: 1;
+
+          width: 100vw;
+          margin-left: calc(50% - 50vw);
+          padding-left: 0;
+          padding-right: 0;
+        }
+          
+        @include media-breakpoint-up(md) {
+          flex-basis: 52%;
+          border: 5px solid $white;
+        }
+        
+      }
+
+      .content {
+
+      	@include media-breakpoint-down(sm) {
+          z-index: 2;
+          margin-top: -45%;
+      	}
+
+      	@include media-breakpoint-up(md) {
+          flex-basis: 48%;
+      	}
+
+      	position: relative;
+
+      	flex-basis: 48%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        > * {
+          
+          @extend %box-shadow-panel;
+          
+          @include media-breakpoint-up(md) {
+            width: 380px;
+            position: absolute;
+            left: -15%;
+            min-width: 380px;
+          }
+
+          @include media-breakpoint-up(lg) {
+            width: 450px;
+            min-width: 450px;
+          }
+
+          background: white;
+          padding: 40px 70px;
+          
+
+        }
+
+      }
+
+  	}
+
+  	.carousel-indicators {
+      bottom: -40px;
+      margin: 0;
+      
+      li {
+      	background-color: $darkSlateBlue;
+
+      	&.active {
+      	  background-color: map-get($grays, "300");
+        }
+      }	
+
+  	}
+    .carousel-control-next,
+    .carousel-control-prev {
+      @include media-breakpoint-down(sm) {
+      	opacity: 0;
+      }
+    }
+    .carousel-control-next {
+      justify-content: flex-end;
+      right: -15px;
+    }
+    .carousel-control-prev {
+      justify-content: flex-start;
+      left: -15px;
+    }
+  	.carousel-control-next-icon,
+  	.carousel-control-prev-icon {
+  	  width: 12px;
+  	  height: 23px;
+	  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIyNSIgdmlld0JveD0iMCAwIDE1IDI1Ij4gICAgPHBhdGggZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2U9IiMxMzI5NUIiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTEuMzUzIDFMMTMgMTIuNSAxIDI0Ii8+PC9zdmc+);
+    }
+    .carousel-control-prev-icon {
+      transform: scaleX(-1);
+      // IE
+      filter: FlipH;
+      -ms-filter: "FlipH";
+
+    }
+
+  }
+}

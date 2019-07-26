@@ -1,0 +1,178 @@
+section.contact-us {
+  
+  .top {
+
+  	@include media-breakpoint-up(lg) {
+      padding: 30px 30px 0 30px;
+      text-align: left;
+  	}
+
+  	padding: 20px;
+    text-align: center;
+
+    h2 {
+
+      @include media-breakpoint-up(lg) {
+        max-width: 50%;
+      }
+
+      @include media-breakpoint-up(xl) {
+        max-width: 40%;
+      }
+
+      font-size: $h1-font-size-small;
+      color: $darkSlateBlue;
+      
+    }
+
+    .description {
+      font-size: $font-size-mx;
+      color: $darkSlateBlue;
+    }
+  	
+  }
+
+  .image {
+  	@include media-breakpoint-up(lg) {
+  	  position: relative;
+    }
+    padding-top: 40px;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .social-media {
+    > * {
+      padding-right: 20px;
+    }
+
+    > span {
+      &:before {
+        transition: all ease 0.5s;
+      }
+      &:hover {
+        &:before {
+          transform: scale(1.5);
+        }
+      }
+    }
+
+    .phone {
+      &:before {
+        content: "";
+        margin-right: 5px;
+        display: inline-block;
+        width: 18px;
+        height: 11px;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxMSIgdmlld0JveD0iMCAwIDE4IDExIj4gIDxnIGZpbGw9IiMxMzI5NUIiPiAgICA8cGF0aCBkPSJNOC45MDMgMTAuMjQ4Yy0zLjg4NCAwLTcuMTE3LTMuNzA0LTcuODkyLTQuNjM4QzEuNzg2IDQuNjc2IDUuMDIuOTcgOC45MDMuOTdjMy44ODQgMCA3LjExNyAzLjcwNSA3Ljg5MiA0LjYzOS0uNzc1LjkzNC00LjAwOCA0LjYzOC03Ljg5MiA0LjYzOHptOC42NTQtNC44NWMtLjE1OS0uMjEtMy44NTgtNS4xNC04LjY1NC01LjE0QzQuMTA3LjI1OC40MDggNS4xODguMjUgNS4zOThsLS4xNi4yMTIuMTYuMjExYy4xNTkuMjEgMy44NTggNS4xNCA4LjY1NCA1LjE0IDQuNzk2IDAgOC40OTUtNC45MyA4LjY1NC01LjE0bC4xNi0uMjExLS4xNi0uMjEyeiIvPiAgICA8cGF0aCBkPSJNOC45MDMgNy43NUM3LjY4OCA3Ljc1IDYuNyA2Ljc5IDYuNyA1LjYxYzAtMS4xOC45ODgtMi4xNDEgMi4yMDMtMi4xNDEgMS4yMTUgMCAyLjIwNC45NiAyLjIwNCAyLjE0MSAwIDEuMTgtLjk4OSAyLjE0LTIuMjA0IDIuMTRtMC00Ljk5NGMtMS42MiAwLTIuOTM4IDEuMjgtMi45MzggMi44NTQgMCAxLjU3MyAxLjMxOCAyLjg1NCAyLjkzOCAyLjg1NHMyLjkzOC0xLjI4IDIuOTM4LTIuODU0LTEuMzE4LTIuODU0LTIuOTM4LTIuODU0Ii8+ICA8L2c+PC9zdmc+);
+      }
+    }
+    .email {
+      &:before {
+        content: "";
+        margin-right: 5px;
+        display: inline-block;
+        width: 18px;
+        height: 11px;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxMSIgdmlld0JveD0iMCAwIDE4IDExIj4gIDxnIGZpbGw9IiMxMzI5NUIiPiAgICA8cGF0aCBkPSJNOC45MDMgMTAuMjQ4Yy0zLjg4NCAwLTcuMTE3LTMuNzA0LTcuODkyLTQuNjM4QzEuNzg2IDQuNjc2IDUuMDIuOTcgOC45MDMuOTdjMy44ODQgMCA3LjExNyAzLjcwNSA3Ljg5MiA0LjYzOS0uNzc1LjkzNC00LjAwOCA0LjYzOC03Ljg5MiA0LjYzOHptOC42NTQtNC44NWMtLjE1OS0uMjEtMy44NTgtNS4xNC04LjY1NC01LjE0QzQuMTA3LjI1OC40MDggNS4xODguMjUgNS4zOThsLS4xNi4yMTIuMTYuMjExYy4xNTkuMjEgMy44NTggNS4xNCA4LjY1NCA1LjE0IDQuNzk2IDAgOC40OTUtNC45MyA4LjY1NC01LjE0bC4xNi0uMjExLS4xNi0uMjEyeiIvPiAgICA8cGF0aCBkPSJNOC45MDMgNy43NUM3LjY4OCA3Ljc1IDYuNyA2Ljc5IDYuNyA1LjYxYzAtMS4xOC45ODgtMi4xNDEgMi4yMDMtMi4xNDEgMS4yMTUgMCAyLjIwNC45NiAyLjIwNCAyLjE0MSAwIDEuMTgtLjk4OSAyLjE0LTIuMjA0IDIuMTRtMC00Ljk5NGMtMS42MiAwLTIuOTM4IDEuMjgtMi45MzggMi44NTQgMCAxLjU3MyAxLjMxOCAyLjg1NCAyLjkzOCAyLjg1NHMyLjkzOC0xLjI4IDIuOTM4LTIuODU0LTEuMzE4LTIuODU0LTIuOTM4LTIuODU0Ii8+ICA8L2c+PC9zdmc+);
+      }
+    }
+    .bubble {
+      &:before {
+        content: "";
+        margin-right: 5px;
+        display: inline-block;
+        width: 18px;
+        height: 11px;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxMSIgdmlld0JveD0iMCAwIDE4IDExIj4gIDxnIGZpbGw9IiMxMzI5NUIiPiAgICA8cGF0aCBkPSJNOC45MDMgMTAuMjQ4Yy0zLjg4NCAwLTcuMTE3LTMuNzA0LTcuODkyLTQuNjM4QzEuNzg2IDQuNjc2IDUuMDIuOTcgOC45MDMuOTdjMy44ODQgMCA3LjExNyAzLjcwNSA3Ljg5MiA0LjYzOS0uNzc1LjkzNC00LjAwOCA0LjYzOC03Ljg5MiA0LjYzOHptOC42NTQtNC44NWMtLjE1OS0uMjEtMy44NTgtNS4xNC04LjY1NC01LjE0QzQuMTA3LjI1OC40MDggNS4xODguMjUgNS4zOThsLS4xNi4yMTIuMTYuMjExYy4xNTkuMjEgMy44NTggNS4xNCA4LjY1NCA1LjE0IDQuNzk2IDAgOC40OTUtNC45MyA4LjY1NC01LjE0bC4xNi0uMjExLS4xNi0uMjEyeiIvPiAgICA8cGF0aCBkPSJNOC45MDMgNy43NUM3LjY4OCA3Ljc1IDYuNyA2Ljc5IDYuNyA1LjYxYzAtMS4xOC45ODgtMi4xNDEgMi4yMDMtMi4xNDEgMS4yMTUgMCAyLjIwNC45NiAyLjIwNCAyLjE0MSAwIDEuMTgtLjk4OSAyLjE0LTIuMjA0IDIuMTRtMC00Ljk5NGMtMS42MiAwLTIuOTM4IDEuMjgtMi45MzggMi44NTQgMCAxLjU3MyAxLjMxOCAyLjg1NCAyLjkzOCAyLjg1NHMyLjkzOC0xLjI4IDIuOTM4LTIuODU0LTEuMzE4LTIuODU0LTIuOTM4LTIuODU0Ii8+ICA8L2c+PC9zdmc+);
+      }
+    }
+  }
+
+  .support,
+  .form .inner {
+  	background: $white;
+  }
+
+  .form {
+
+  	@include media-breakpoint-up(lg) {
+      margin-top: 0;
+      padding-bottom: 0;
+  	}
+
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	margin-top: 25px;
+    padding-bottom: 40px;
+
+    background: url(../img/tmp-bkg-contact.jpg) no-repeat 160px 100%;
+
+  	.inner {
+      @include media-breakpoint-down(lg) {
+        box-shadow: none;
+      }
+
+  	  @include media-breakpoint-up(lg) {
+        width: 75%;
+  	    max-width: 75%;
+  	  }
+
+  	  width: 100%
+  	}
+
+    form.altorep {
+      padding: 50px;
+
+      display: flex;
+      flex-wrap: wrap;
+
+      > * {
+        flex-basis: 100%;
+        
+
+
+      }
+      p.half {
+        flex-basis: 50%;
+      }
+      > p {
+        padding: 0 10px;
+        margin-bottom: 2rem;
+
+        > input::-webkit-input-placeholder,
+          textarea::-webkit-input-placeholder {
+          font-size: $font-size-mx ;
+          color: $darkSlateBlue;
+        }
+
+        > input:-moz-placeholder,
+          textarea::-webkit-input-placeholder { /* Firefox 18- */
+          font-size: $font-size-mx;
+          color: $darkSlateBlue;
+        }
+
+        > input::-moz-placeholder,
+          textarea::-webkit-input-placeholder {  /* Firefox 19+ */
+          font-size: $font-size-mx;
+          color: $darkSlateBlue;
+        }
+
+        > input:-ms-input-placeholder,
+          textarea::-webkit-input-placeholder {  
+          font-size: $font-size-mx;
+          color: $darkSlateBlue;
+        }
+
+        > input, textarea {
+          width: 100%;
+          border: 0;
+          border-bottom: 1px solid $darkSlateBlue;
+        }
+
+      }
+    }
+  }
+
+}

@@ -1,0 +1,215 @@
+section.feat-art-alt {
+  @include media-breakpoint-up(md) {
+    padding-bottom: 100px;
+  }
+
+  padding-bottom: 65px;
+
+  .carousel {
+    &.cities-list {
+
+      background-color: transparent;
+
+      .carousel__item {
+        min-height: 280px;
+
+        &:hover {
+          .city-image {
+            opacity: .85;
+          }
+          .city-name {
+            color: $beige;
+          }
+        }
+      }
+      .content {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 100%;
+
+        .city-image {
+          position: relative;
+          display: flex;
+          align-items: flex-end;
+
+          flex-grow: 1;
+          width: 100%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 50%;
+          background-color: map-get($grays, "300");
+        }
+        .city-name {
+          display: flex;
+          width: 100%;
+          position: relative;
+          z-index: 2;
+          height: 40px;
+          justify-content: center;
+          align-items: center;
+          background: white;
+            
+          h2 {
+            font-size: $font-size-mx;
+            margin: 0;
+          }
+
+        }
+
+      }
+    }
+  }
+}
+
+
+// maximum number of slides the carousel can have
+$number-of-slides: 6;
+
+// Replicated sliding effect
+@for $i from 1 through $number-of-slides {
+  .carousel__activator:nth-of-type(#{$i}):checked
+  ~ .carousel__controls:nth-of-type(#{$i}) {
+    display: flex;
+}
+
+  .carousel__activator:nth-of-type(#{$i}):checked
+  ~ .carousel__screen
+  .carousel__track {
+    transform: translateX(#{(1 - $i) * 100%});
+  }
+}
+
+.carousel.cities-list {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 0 15px;
+
+  .carousel__activator {
+    display: none
+  }
+
+  .carousel__controls {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    left: 5px;
+    bottom: 0;
+
+    &:first-of-type {
+      justify-content: flex-end;
+    }
+
+    &:last-of-type {
+      justify-content: flex-start;
+    }
+  }
+
+  .carousel__control {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    width: 12px;
+    height: 23px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIyNSIgdmlld0JveD0iMCAwIDE1IDI1Ij4gICAgPHBhdGggZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2U9IiMxMzI5NUIiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTEuMzUzIDFMMTMgMTIuNSAxIDI0Ii8+PC9zdmc+);
+    background-size: cover;
+
+    &.carousel__control--backward {
+      transform: scaleX(-1);
+      // IE
+      filter: FlipH;
+      -ms-filter: "FlipH";      
+    }
+  }
+
+  .carousel__screen {
+    overflow: hidden;
+
+    .carousel__track {
+      // font size 0 to remove space between the slides
+      // https://css-tricks.com/fighting-the-space-between-inline-block-elements/
+      font-size: $font-size-null;
+      transition: all 0.3s ease 0s;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .carousel__item {
+      display: inline-flex;
+      padding-left: 16px;
+      padding-right: 16px;
+      vertical-align: top;
+      white-space: normal;
+    }
+  }
+}
+
+// desktop can have up to 5 items per slide
+@for $i from 1 through 5 {
+  .carousel__item--desktop-in-#{$i} {
+    width: #{100% / $i};
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .carousel {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .carousel__activator:nth-of-type(n):checked {
+    ~ .carousel__controls:nth-of-type(n) {
+      display: none;
+    }
+
+    ~ .carousel__screen .carousel__track {
+      transform: none;
+    }
+  }
+
+  .carousel__screen {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .carousel__track {
+    overflow-x: auto;
+    width: auto;
+    padding-left: 0;
+    padding-right: 48px;
+
+  }
+
+  // tablet can have up to 3 items per slide
+  @for $i from 1 through 5 {
+    .carousel__item--tablet-in-#{$i} {
+      // 90% instead of 100% so the next slide appears on the right side
+      width: #{90% / $i};
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .carousel__track {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  // mobile can have up to 1 1/4 items per slide
+  @for $i from 1 through 3 {
+    .carousel__item--mobile-in-#{$i} {
+      // 80% instead of 100% so the next slide appears on the right side
+      width: #{80% / $i};
+    }
+  }
+}

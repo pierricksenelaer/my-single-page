@@ -1,0 +1,72 @@
+section.collections {
+  
+  @include media-breakpoint-up(md) {
+    padding-bottom: 100px;
+  }
+
+  padding-bottom: 65px;
+
+  .row {
+
+  	@include media-breakpoint-down(md) {
+      justify-content: center;
+  	}
+
+  }
+
+  .carousel {
+    
+    @include media-breakpoint-up(md) {
+      flex-basis: 50%;
+  	}
+
+  	@include media-breakpoint-up(lg) {
+      flex-basis: 33.33%;
+  	}
+    
+    display: flex;
+
+  	flex-basis: 100%;
+  
+  	padding: 0 30px 30px 30px;
+    background: transparent;
+
+    .carousel-inner {
+      display: inherit;
+      
+      .carousel-item {
+        background-color: $white;
+      }
+
+      .thumb-controls {
+        position: absolute;
+        left: 0;
+        top:0;
+        width: 100%;
+      }
+
+    }
+
+    .inner {
+      @extend %padding-card-40-50;
+
+      .summary {
+        font-size: $font-size-mx;
+        padding-bottom: 40px;
+      }
+
+      .footer-carousel {
+        position: absolute;
+        bottom: 50px;
+        left: 0;
+        width: 100%;
+
+        display: flex;
+        justify-content: center
+      }
+    }
+
+
+  }
+
+}

@@ -18,3 +18,24 @@ body {
   text-indent: -9999px;
   z-index: 2;
 }
+
+.pd-40,
+%pd-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.pdt-40,
+%pdt-40 {
+  padding-top: 40px;
+}
+
+.pdb-50,
+%pdb-50 {
+  padding-bottom: 50px;
+}
+
+.padding-card-40-50,
+%padding-card-40-50 {
+  padding: 40px 40px 50px 40px;
+}

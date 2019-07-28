@@ -31,6 +31,10 @@ section.card-introduction {
         padding: 40px 100px;
   	  }
 
+      @include media-breakpoint-up(xl) {
+        padding: 40px;
+      }
+
       @include media-breakpoint-up(lg) {
         max-width: 60%;
       }

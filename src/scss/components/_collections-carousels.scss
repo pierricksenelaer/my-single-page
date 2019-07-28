@@ -37,7 +37,12 @@ section.collections {
       .carousel-item {
         background-color: $white;
       }
-
+      
+      .thumb {
+        padding: 5px;
+        border: 1px solid map-get($grays, "300");
+      }
+      
       .thumb-controls {
         position: absolute;
         left: 0;
@@ -49,7 +54,7 @@ section.collections {
 
     .inner {
       @extend %padding-card-40-50;
-
+      
       .summary {
         font-size: $font-size-mx;
         padding-bottom: 40px;

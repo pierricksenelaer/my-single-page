@@ -7,10 +7,21 @@ section.skills-feature {
 
   .carousel {
   	background: transparent;
-  	.carousel-inner {
-      
+  	
+    .carousel-inner {
+      display: flex;
+      align-items: center;
+      min-height: 480px;
+
       @include media-breakpoint-down(md) {
       	overflow: visible;
+      }
+
+      > .carousel-item {
+        min-height: inherit;
+        > * {
+          min-height: inherit;
+        }
       }
 
       > * .inner {
@@ -43,7 +54,6 @@ section.skills-feature {
           
         @include media-breakpoint-up(md) {
           flex-basis: 52%;
-          border: 5px solid $white;
         }
         
       }

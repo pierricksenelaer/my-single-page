@@ -5,6 +5,10 @@ body {
 .box-shadow-panel,
 %box-shadow-panel {
   box-shadow: -6px 8px 23px 2px rgba(26, 49, 101, 0.25);
+  &.corner {
+    position: relative;
+    overflow: hidden;
+  }
 }
 
 .block-linking,
@@ -38,4 +42,29 @@ body {
 .padding-card-40-50,
 %padding-card-40-50 {
   padding: 40px 40px 50px 40px;
+}
+
+.corner-ribbon {
+  width: 300px;
+  position: absolute;
+  top: 30px;
+  left: -90px;
+  text-align: center;
+  line-height: 30px;
+  color: $white;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  font-size: $h5-font-size;
+  z-index: 10;
+  font-weight: bold;
+  background: map-get($grays, "300");
+  > a.ribbon-link {
+    &:hover {
+      color: inherit;
+    }
+  }
+  > a > span,
+  > span {
+    display: block;
+  }
 }

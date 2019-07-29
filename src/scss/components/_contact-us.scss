@@ -13,7 +13,7 @@ section.contact-us {
     h2 {
 
       @include media-breakpoint-up(lg) {
-        max-width: 50%;
+        max-width: 68%;
       }
 
       @include media-breakpoint-up(xl) {
@@ -42,9 +42,6 @@ section.contact-us {
   }
 
   .social-media {
-    > * {
-      padding-right: 20px;
-    }
 
     > span {
       &:before {
@@ -57,34 +54,25 @@ section.contact-us {
       }
     }
 
-    .phone {
+    .linkedin {
       &:before {
         content: "";
         margin-right: 5px;
         display: inline-block;
-        width: 18px;
-        height: 11px;
-        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxMSIgdmlld0JveD0iMCAwIDE4IDExIj4gIDxnIGZpbGw9IiMxMzI5NUIiPiAgICA8cGF0aCBkPSJNOC45MDMgMTAuMjQ4Yy0zLjg4NCAwLTcuMTE3LTMuNzA0LTcuODkyLTQuNjM4QzEuNzg2IDQuNjc2IDUuMDIuOTcgOC45MDMuOTdjMy44ODQgMCA3LjExNyAzLjcwNSA3Ljg5MiA0LjYzOS0uNzc1LjkzNC00LjAwOCA0LjYzOC03Ljg5MiA0LjYzOHptOC42NTQtNC44NWMtLjE1OS0uMjEtMy44NTgtNS4xNC04LjY1NC01LjE0QzQuMTA3LjI1OC40MDggNS4xODguMjUgNS4zOThsLS4xNi4yMTIuMTYuMjExYy4xNTkuMjEgMy44NTggNS4xNCA4LjY1NCA1LjE0IDQuNzk2IDAgOC40OTUtNC45MyA4LjY1NC01LjE0bC4xNi0uMjExLS4xNi0uMjEyeiIvPiAgICA8cGF0aCBkPSJNOC45MDMgNy43NUM3LjY4OCA3Ljc1IDYuNyA2Ljc5IDYuNyA1LjYxYzAtMS4xOC45ODgtMi4xNDEgMi4yMDMtMi4xNDEgMS4yMTUgMCAyLjIwNC45NiAyLjIwNCAyLjE0MSAwIDEuMTgtLjk4OSAyLjE0LTIuMjA0IDIuMTRtMC00Ljk5NGMtMS42MiAwLTIuOTM4IDEuMjgtMi45MzggMi44NTQgMCAxLjU3MyAxLjMxOCAyLjg1NCAyLjkzOCAyLjg1NHMyLjkzOC0xLjI4IDIuOTM4LTIuODU0LTEuMzE4LTIuODU0LTIuOTM4LTIuODU0Ii8+ICA8L2c+PC9zdmc+);
+        width: 30px;
+        height: 30px;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0id2hpdGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI4IiBoZWlnaHQ9IjI4IiB2aWV3Qm94PSIwIDAgMjggMjgiPiAgPHBhdGggZD0iTTI1LjQyNCAxNS44ODd2OC40NDdoLTQuODk2di03Ljg4MmMwLTEuOTgtLjcxLTMuMzMtMi40OC0zLjMzLTEuMzU0IDAtMi4xNTguOTEtMi41MTQgMS44MDItLjEzLjMxNS0uMTYyLjc1My0uMTYyIDEuMTk0djguMjE2aC00LjlzLjA2Ny0xMy4zNSAwLTE0LjczaDQuOXYyLjA4N2MtLjAxLjAxNy0uMDIzLjAzMy0uMDMzLjA1aC4wMzJ2LS4wNWMuNjUtMS4wMDIgMS44MTItMi40MzUgNC40MTQtMi40MzUgMy4yMjIgMCA1LjYzOCAyLjEwNiA1LjYzOCA2LjYzMnpNNS4zNDggMi41Yy0xLjY3NiAwLTIuNzcyIDEuMDkzLTIuNzcyIDIuNTQgMCAxLjQyIDEuMDY2IDIuNTM4IDIuNzE3IDIuNTQ2aC4wMzJjMS43MSAwIDIuNzctMS4xMzIgMi43Ny0yLjU0NkM4LjA1NiAzLjU5MyA3LjAyIDIuNSA1LjM0NCAyLjVoLjAwNXptLTIuNDggMjEuODM0aDQuODk2VjkuNjA0SDIuODY3djE0LjczeiIvPjwvc3ZnPg==);
       }
     }
-    .email {
+    .twitter {
       &:before {
         content: "";
         margin-right: 5px;
         display: inline-block;
-        width: 18px;
-        height: 11px;
-        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxMSIgdmlld0JveD0iMCAwIDE4IDExIj4gIDxnIGZpbGw9IiMxMzI5NUIiPiAgICA8cGF0aCBkPSJNOC45MDMgMTAuMjQ4Yy0zLjg4NCAwLTcuMTE3LTMuNzA0LTcuODkyLTQuNjM4QzEuNzg2IDQuNjc2IDUuMDIuOTcgOC45MDMuOTdjMy44ODQgMCA3LjExNyAzLjcwNSA3Ljg5MiA0LjYzOS0uNzc1LjkzNC00LjAwOCA0LjYzOC03Ljg5MiA0LjYzOHptOC42NTQtNC44NWMtLjE1OS0uMjEtMy44NTgtNS4xNC04LjY1NC01LjE0QzQuMTA3LjI1OC40MDggNS4xODguMjUgNS4zOThsLS4xNi4yMTIuMTYuMjExYy4xNTkuMjEgMy44NTggNS4xNCA4LjY1NCA1LjE0IDQuNzk2IDAgOC40OTUtNC45MyA4LjY1NC01LjE0bC4xNi0uMjExLS4xNi0uMjEyeiIvPiAgICA8cGF0aCBkPSJNOC45MDMgNy43NUM3LjY4OCA3Ljc1IDYuNyA2Ljc5IDYuNyA1LjYxYzAtMS4xOC45ODgtMi4xNDEgMi4yMDMtMi4xNDEgMS4yMTUgMCAyLjIwNC45NiAyLjIwNCAyLjE0MSAwIDEuMTgtLjk4OSAyLjE0LTIuMjA0IDIuMTRtMC00Ljk5NGMtMS42MiAwLTIuOTM4IDEuMjgtMi45MzggMi44NTQgMCAxLjU3MyAxLjMxOCAyLjg1NCAyLjkzOCAyLjg1NHMyLjkzOC0xLjI4IDIuOTM4LTIuODU0LTEuMzE4LTIuODU0LTIuOTM4LTIuODU0Ii8+ICA8L2c+PC9zdmc+);
-      }
-    }
-    .bubble {
-      &:before {
-        content: "";
-        margin-right: 5px;
-        display: inline-block;
-        width: 18px;
-        height: 11px;
-        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxMSIgdmlld0JveD0iMCAwIDE4IDExIj4gIDxnIGZpbGw9IiMxMzI5NUIiPiAgICA8cGF0aCBkPSJNOC45MDMgMTAuMjQ4Yy0zLjg4NCAwLTcuMTE3LTMuNzA0LTcuODkyLTQuNjM4QzEuNzg2IDQuNjc2IDUuMDIuOTcgOC45MDMuOTdjMy44ODQgMCA3LjExNyAzLjcwNSA3Ljg5MiA0LjYzOS0uNzc1LjkzNC00LjAwOCA0LjYzOC03Ljg5MiA0LjYzOHptOC42NTQtNC44NWMtLjE1OS0uMjEtMy44NTgtNS4xNC04LjY1NC01LjE0QzQuMTA3LjI1OC40MDggNS4xODguMjUgNS4zOThsLS4xNi4yMTIuMTYuMjExYy4xNTkuMjEgMy44NTggNS4xNCA4LjY1NCA1LjE0IDQuNzk2IDAgOC40OTUtNC45MyA4LjY1NC01LjE0bC4xNi0uMjExLS4xNi0uMjEyeiIvPiAgICA8cGF0aCBkPSJNOC45MDMgNy43NUM3LjY4OCA3Ljc1IDYuNyA2Ljc5IDYuNyA1LjYxYzAtMS4xOC45ODgtMi4xNDEgMi4yMDMtMi4xNDEgMS4yMTUgMCAyLjIwNC45NiAyLjIwNCAyLjE0MSAwIDEuMTgtLjk4OSAyLjE0LTIuMjA0IDIuMTRtMC00Ljk5NGMtMS42MiAwLTIuOTM4IDEuMjgtMi45MzggMi44NTQgMCAxLjU3MyAxLjMxOCAyLjg1NCAyLjkzOCAyLjg1NHMyLjkzOC0xLjI4IDIuOTM4LTIuODU0LTEuMzE4LTIuODU0LTIuOTM4LTIuODU0Ii8+ICA8L2c+PC9zdmc+);
+        width: 30px;
+        height: 30px;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyBjbGFzcz0id2hpdGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI4IiBoZWlnaHQ9IjI4IiB2aWV3Qm94PSIwIDAgMjggMjgiPiAgPHBhdGggZD0iTTI0LjI1MyA4Ljc1NkMyNC42OSAxNy4wOCAxOC4yOTcgMjQuMTgyIDkuOTcgMjQuNjJhMTUuMDg2IDE1LjA4NiAwIDAgMS04Ljg2LTIuMzJjMi43MDIuMTggNS4zNzUtLjY0OCA3LjUwNy0yLjMyYTUuNDIxIDUuNDIxIDAgMCAxLTQuNDktMy42NGMuODAyLjEzIDEuNjIuMDc3IDIuNC0uMTU0YTUuNDE2IDUuNDE2IDAgMCAxLTQuNDEyLTUuMTEgNS40MTIgNS40MTIgMCAwIDAgMi4xNjguMzg3IDUuNDE1IDUuNDE1IDAgMCAxLTEuMzk0LTYuOTY1IDE1LjA4NCAxNS4wODQgMCAwIDAgMTAuOTEzIDUuNTcyIDUuMTgzIDUuMTgzIDAgMCAxIDMuNDM0LTYuNDggNS4xNzkgNS4xNzkgMCAwIDEgNS41NDYgMS42ODIgOS4wODggOS4wODggMCAwIDAgMy4zMy0xLjMxNyA1LjA0MyA1LjA0MyAwIDAgMS0yLjQgMi45NDIgOS4wOTUgOS4wOTUgMCAwIDAgMy4wMi0uODUgNS4wNTggNS4wNTggMCAwIDEtMi40OCAyLjcxeiIvPjwvc3ZnPg==);
+
       }
     }
   }
@@ -143,25 +131,25 @@ section.contact-us {
 
         > input::-webkit-input-placeholder,
           textarea::-webkit-input-placeholder {
-          font-size: $font-size-mx ;
+          font-size: $font-size-sm;
           color: $darkSlateBlue;
         }
 
         > input:-moz-placeholder,
           textarea::-webkit-input-placeholder { /* Firefox 18- */
-          font-size: $font-size-mx;
+          font-size: $font-size-sm;
           color: $darkSlateBlue;
         }
 
         > input::-moz-placeholder,
           textarea::-webkit-input-placeholder {  /* Firefox 19+ */
-          font-size: $font-size-mx;
+          font-size: $font-size-sm;
           color: $darkSlateBlue;
         }
 
         > input:-ms-input-placeholder,
           textarea::-webkit-input-placeholder {  
-          font-size: $font-size-mx;
+          font-size: $font-size-sm;
           color: $darkSlateBlue;
         }
 

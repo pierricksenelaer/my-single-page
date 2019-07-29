@@ -41,7 +41,9 @@
   }
 
   .github {
-    padding-bottom: 30px;
+    @include media-breakpoint-up(md) {
+      padding-bottom: 30px;
+    }
     &:after {
       
       @include media-breakpoint-down(sm) {

@@ -8254,8 +8254,7 @@ section.contact-us .form {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 25px;
-  padding-bottom: 40px;
-  background: url(../img/tmp-bkg-contact.jpg) no-repeat 160px 100%; }
+  padding-bottom: 40px; }
   @media (min-width: 992px) {
     section.contact-us .form {
       margin-top: 0;

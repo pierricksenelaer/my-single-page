@@ -101,8 +101,6 @@ section.contact-us {
   	margin-top: 25px;
     padding-bottom: 40px;
 
-    background: url(../img/tmp-bkg-contact.jpg) no-repeat 160px 100%;
-
   	.inner {
       @include media-breakpoint-down(lg) {
         box-shadow: none;

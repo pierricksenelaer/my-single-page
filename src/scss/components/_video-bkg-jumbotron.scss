@@ -11,6 +11,7 @@ section.hero-bkg {
   }
 
   .card-title {
+
   	@include media-breakpoint-down(sm) {
       font-size: $h1-font-size*.7;
     }
@@ -18,19 +19,13 @@ section.hero-bkg {
       max-width: 70%;
       margin: 0 auto;
     }
+
   }
 
   .main-subhead {
     @include media-breakpoint-down(sm) {
       font-size: $font-size-base;
     }  	
-  }
-
-  .card-title,
-  .main-subhead {
-  	@include media-breakpoint-down(sm) {
-      padding: 0 40px;
-    }
   }
 
 }

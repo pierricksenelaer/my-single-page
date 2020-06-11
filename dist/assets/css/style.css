@@ -7733,13 +7733,6 @@ section.hero-bkg .jumbotron {
   section.hero-bkg .main-subhead {
     font-size: 1rem; } }
 
-@media (max-width: 767.98px) {
-  section.video-bkg .card-title,
-  section.video-bkg .main-subhead,
-  section.hero-bkg .card-title,
-  section.hero-bkg .main-subhead {
-    padding: 0 40px; } }
-
 section.card-introduction {
   background: url(../img/grid.png) repeat 0 0;
   padding: 30px 0; }
